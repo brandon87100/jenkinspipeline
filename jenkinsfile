@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            git 'https://github.com/brandon87100/jenkinspipeline'
+        git branch: 'main', credentialsId: '63ccb80f-2ff1-49ab-ace8-fcdb5b89455d', url: 'https://github.com/brandon87100/jenkinspipeline'
             }
         }
         
