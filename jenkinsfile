@@ -4,29 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Build 1' 
-                echo 'Build 2' 
-            }
-        }
-        
-        
-        
-      stage('Test') {
-            steps {
-                echo 'Test UNITAIRE'
-                 echo 'Test Integration'
-                
+            git 'https://github.com/brandon87100/jenkinspipeline'
             }
         }
         
         
        
-        
-          stage('Deploy') {
-            steps {
-                echo 'Deploy'
-            }
-        }
         
         
         
